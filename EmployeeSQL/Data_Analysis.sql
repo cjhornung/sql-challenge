@@ -45,6 +45,9 @@ ON departments.dept_no=dept_emp.dept_no
 
 -- 5. List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
 
+SELECT * FROM employees
+WHERE first_name = 'Hercules' AND last_name LIKE 'B%';
+
 -- 6. List each employee in the Sales department, including their employee number, last name, and first name.
 
 -- 7. List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
