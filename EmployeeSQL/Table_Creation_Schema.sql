@@ -49,4 +49,17 @@ CREATE TABLE salaries (
 
 select * from salaries
 
+-- dept_managers table creation
+
+DROP TABLE dept_managers
+
+CREATE TABLE dept_managers (
+ dept_no VARCHAR (30),
+ emp_no INT,
+ FOREIGN KEY (dept_no) REFERENCES departments(dept_no),
+ FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
+);
+
+select * from dept_managers
+
 
