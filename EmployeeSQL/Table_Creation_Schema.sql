@@ -37,3 +37,16 @@ CREATE TABLE dept_emp (
 );
 
 select * from dept_emp
+
+-- salaries table creation 
+DROP TABLE salaries
+
+CREATE TABLE salaries (
+	emp_no INT NOT NULL,
+	salary INT NOT NULL,
+	FOREIGN KEY(emp_no) REFERENCES employees(emp_no)
+);
+
+select * from salaries
+
+
